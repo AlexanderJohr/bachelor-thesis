@@ -1,19 +1,43 @@
-
+% Dies ist die Preambel
 \include{com/config}
+
+\newif\ifIncludeFigures
+\newif\ifIncludeMiscellaneous
+
+
+\IncludeFiguresfalse
+\IncludeMiscellaneousfalse
+
+
+\ifIncludeFigures
+
+\else
+  \renewcommand{\cleardoublepage}{}
+  \renewcommand{\clearpage}{}
+  \renewcommand{\newpage}{}
+\fi
 
 \begin{document}
 \pagenumbering{Roman}
 
+
+
+\ifIncludeMiscellaneous
 \include{title/title}
+\fi
+
 
 
 \newpage
 \thispagestyle{empty}
 \mbox{}
 
+
+
+
+\ifIncludeMiscellaneous
 \input{Expose}
-
-
+\fi
 
 \thispagestyle{plain}
 \pagestyle{plain}
@@ -24,21 +48,28 @@
 \thispagestyle{empty}
 \mbox{}
 
+\ifIncludeMiscellaneous
 \tableofcontents
+\fi
 
-%\cleardoublepage
-%\phantomsection
+
+\ifIncludeMiscellaneous
 \addcontentsline{toc}{section}{\listfigurename}
 \listoffigures
+\fi
 
 
-%\cleardoublepage
-%\phantomsection
+
+
+\ifIncludeMiscellaneous
 \addcontentsline{toc}{section}{\listoflistingscaption}%
 \listof{listing}{\listoflistingscaption}%
+\fi
 
-
+\ifIncludeMiscellaneous
 \input{BaAJohrDanksagung}
+\fi
+
 
 \newpage
 \thispagestyle{empty}

@@ -9,23 +9,23 @@ QlikView ist ein durch QlikTech entwickeltes Werkzeug zur Analyse von Unternehme
 
 In Abbildung \ref{fig:Sheet} ist ein Sheet im sogenannten WebView von QlikView 11 zu sehen. Auf der linken Seite sind Objekte in einem Fenster aufgelistet, die dem Sheet hinzugefügt werden können. Die Objekte haben in QlikView den Namen Sheet Objects. Es handelt sich dabei um Textfelder, Listen, Tabellen und diverse Diagrammtypen. Per Drag-and-Drop können die Sheet Objects auf der Arbeitsfläche positioniert werden. Auf der rechten Seite der Abbildung sind eine Listbox und einige der Diagramme abgebildet. Im unteren Bereich des Fensters ist der Reiter \textit{Erweiterungsobjekte} zu sehen. Er öffnet eine Auflistung der sogenannten Extension Objects, die in der vorliegenden Arbeit näher thematisiert werden.
 
-\begin{figure}[htbp]
+\ifIncludeFigures\begin{figure}[htbp]
 	\centering
 		\includegraphics[width=0.95\textwidth]{img/QlikView/Sheet.png}
 	\caption[Ein QlikView Sheet mit diversen Sheet Objects]{Ein QlikView Sheet mit diversen Sheet Objects, Quelle: Eigene Abbildung}
 	\label{fig:Sheet}
-\end{figure}
+\end{figure}\fi
 
 
 Ändert sich die Selektion der Daten, werden die Diagramme neu generiert, wie in Abbildung \ref{fig:SheetWithSelection} auf Seite \pageref{fig:SheetWithSelection} zu sehen ist. Nachdem zwei Datensätze ausgewählt wurden, zeigen die Diagramme ausschließlich die Daten der ausgewählten Selektion an.
 
 
-\begin{figure}[htbp]
+\ifIncludeFigures\begin{figure}[htbp]
 	\centering
 		\includegraphics[width=0.95\textwidth]{img/QlikView/SheetWithSelection.png}
 	\caption[Ein QlikView Sheet mit diversen Sheet Objects mit aktivierter Selektion]{Ein QlikView Sheet mit diversen Sheet Objects mit aktivierter Selektion, Quelle: Eigene Abbildung}
 	\label{fig:SheetWithSelection}
-\end{figure}
+\end{figure}\fi
 
 In QlikView erstellte Dokumente können über die Anzeige in einem Webbrowser auf unterschiedlichen Geräten dargestellt werden. Die Sheet Objects sind allerdings absolut positioniert und passen sich daher nicht der Größe des Displays an.
 
@@ -35,12 +35,12 @@ Qlik Sense ist eine weitere Business Intelligence Software der Firma, die sich m
 
 Abbildung \ref{fig:SheetInSense} zeigt ein Arbeitsblatt in Qlik Sense, in der ähnliche Sheet Objects zum Einsatz kommen wie bereits in Abbildung \ref{fig:Sheet}. Einige der in QlikView verfügbaren Sheet Objects existierten jedoch zum Zeitpunkt der Erstellung der vorliegenden Arbeit nicht in Qlik Sense. In der Liste im linken Bereich der Abbildung erscheinen Sheet Objects sowie Extension Objects gleichermaßen und werden nicht wie in QlikView kategorisiert.
 
-\begin{figure}[htbp]
+\ifIncludeFigures\begin{figure}[htbp]
 	\centering
 		\includegraphics[width=0.95\textwidth]{img/QlikView/SheetInSense.png}
 	\caption[Ein Qlik Sense Arbeitsblatt mit diversen Sheet Objects mit aktivierter Selektion]{Ein Qlik Sense Arbeitsblatt mit diversen Sheet Objects mit aktivierter Selektion, Quelle: Eigene Abbildung}
 	\label{fig:SheetInSense}
-\end{figure}
+\end{figure}\fi
 
 
 
@@ -82,12 +82,12 @@ Es ist auch möglich das Attribut \textit{Label} für Extension Objects zu entfe
 In dem Attribut \textit{Description} kann ein Beschreibungs\-text hinterlegt werden. Er taucht für eine Document Extension in dem Dialog für die Eigenschaften des Dokuments im Reiter \textit{Erweiterungen} in dem Textfeld \textit{Beschreibung der Erweiterung:} auf, wenn die Erweiterung in der Liste angewählt wurde. Für ein Extension Object steht der Beschreibungs\-text in der Kurzinfo. Die Kurzinfo wird angezeigt, wenn der Mauszeiger in der Liste der verfügbaren Extension Objects über die gewünschte Erweiterung bewegt wird.
 
 
-\begin{figure}[htbp]
+\ifIncludeFigures\begin{figure}[htbp]
 	\centering
 		\includegraphics[width=1.00\textwidth]{./img/DefUndIcon/DefUndIcon2.png}
 	\caption[Liste der verfügbaren Extension Objects]{Liste der verfügbaren Extension Objects mit der Visualisierung der Herkunft des Namens, der Bezeichnung, der Beschreibung und des Vorschaubildes, \\Quelle: Eigene Abbildung}
 	\label{fig:DefUndIcon2}
-\end{figure}
+\end{figure}\fi
 
 Alternativ kann auch das Attribut \textit{Path} zugewiesen werden. Der dort eingetragene Wert wird in der Kurzinfo für die Extension unter \textit{Name} angezeigt. Das Setzen des Attributes ist jedoch nicht notwendig, da hier der Name des Ordners, in dem die Extension gespeichert ist, eingetragen werden muss. Stimmt der Wert des Attributes nicht exakt mit dem Ordnernamen überein, so wird die Extension nicht in der Liste der verfügbaren Extensions auftauchen. Ist das Attribut einfach nicht vorhanden, so taucht der Ordnername ganz automatisch in dem Feld \textit{Name} der Kurzinfo auf. Die weniger redundante und sichere Methode ist es also, das Attribut bei der Erstellung der Datei einfach auszulassen.
 
@@ -117,12 +117,12 @@ In der \textit{Script.js}-Datei befindet sich der JavaScript-Code, der das Verha
 
 Die Icon.png-Bild\-datei repräsentiert das Vorschaubild der Extension. Es ist nur für Object Extensions verfügbar, da es für Document Extensions keinen Auswahldialog gibt, in dem Vorschaubilder angezeigt werden. Das Bild kann eine Auflösung von 24 × 24 Pixeln haben. Es wird in der Liste der verfügbaren Extension Objects angezeigt. Sollte die Datei nicht in demselben Ordner zu finden sein, in dem sich auch die Extension befindet, so wird statt des Vorschau\-bildes ein Fehler\-hinweis angezeigt. Dies ist in der Abbildung \ref{fig:OhneIcon} zu sehen.
 
-\begin{figure}[htbp]
+\ifIncludeFigures\begin{figure}[htbp]
 	\centering
 		\includegraphics[width=1.00\textwidth]{img/OhneIcon/OhneIcon.png}
 	\caption[Fehlerhinweis für ein nicht auffindbares Vorschaubild eines Extension Objects]{Fehlerhinweis für ein nicht auffindbares Vorschaubild eines Extension Objects, Quelle: Eigene Abbildung}
 	\label{fig:OhneIcon}
-\end{figure}
+\end{figure}\fi
 
 
 \subsubsection{Installation von Extension Objects und Document Extensions}
@@ -345,12 +345,12 @@ In diesem Kapitel wird die Entwicklung eines Extension Objects am Beispiel eines
 
 In der Mitte der Abbildung \ref{fig:Vergleich} auf Seite \pageref{fig:Vergleich} ist das Kreisdiagramm in einem QlikView-Dokument dargestellt. Die selektierten Daten der links im Bild befindlichen ListBox werden durch das Kreisdiagramm visualisiert. Rechts im Bild ist zum Vergleich ein durch QlikView mitgeliefertes Kreisdiagramm zu sehen. Das Dokument wird im Browser mit einem angewendeten Zoom dargestellt. Das von QlikView mitgelieferte Kreisdiagramm erscheint durch die erkennbaren Rasterpunkte weniger ästhetisch. Die Darstellung des C3 Kreis\-diagramms wird nicht verschlechtert, da es sich um eine Vektorgrafik handelt.
 
-\begin{figure}
+\ifIncludeFigures\begin{figure}
 	\centering
 		\includegraphics[width=1.00\textwidth]{img/KreisdiagrammScreenshot/Vergleich.PNG}
 	\caption[Screenshot des C3 Kreisdiagramms]{Screenshot des C3 Kreisdiagramms - Mitte - sowie eines von QlikView mitgelieferten Kreisdiagramms - rechts, Quelle: Eigene Abbildung}
 	\label{fig:Vergleich}
-\end{figure}
+\end{figure}\fi
 
 \subsubsection{Erstellen der Dateistruktur}
 
@@ -361,7 +361,7 @@ Das Extension Object soll den Namen C3Kreisdiagramm erhalten. Daher erhält der 
 
 Zur Visualisierung werden Daten benötigt. Weiterhin werden die Extension Objects bzw. die Document Extensions einem QlikView-Dokument zugewiesen. Daher muss zunächst ein Dokument im QlikView Desktop Client angefertigt werden. Für dieses Beispiel werden im QlikView load script Daten zum Test erstellt. Das Listing \ref{lst:InlineLoadFuerTestdaten} wird am Ende des Skriptes eingefügt. Es dient der Erzeugung von drei Daten\-sätzen, die für die Visualisierung verwendet werden können.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,							
@@ -380,14 +380,14 @@ load * inline
 \end{minted}
 \caption[Inline Load für Testdaten]{Inline Load für Testdaten, \\Quellcode\textbackslash{}load script\textbackslash{}QlikView load script.txt, Quelle: Eigenes Listing}
 \label{lst:InlineLoadFuerTestdaten}
-\end{listing}
+\end{listing}\fi
 
 \subsubsection{Hinzufügen eines CSS-Stylesheet}
 \label{lab:HinzufügenEinesCSSStylesheet}
 
 Für die korrekte Darstellung des Kreis\-diagramms wird eine CSS-Anweisung benötigt. Sie ist im Listing \ref{lst:JavascriptC3KreisdiagrammCSSStylesheet} zu sehen und wird als Datei mit dem Namen \textit{style.css} im Ordner der Erweiterung abgelegt. Sie sorgt dafür, dass die generierte Vektorgrafik korrekt im zu zeichnenden Bereich erstellt wird. Fehlt die Anweisung, ist die generierte Vektorgrafik größer als der Bereich, welcher für die Erweiterung vorgesehen ist.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -399,14 +399,14 @@ Für die korrekte Darstellung des Kreis\-diagramms wird eine CSS-Anweisung benö
 \end{minted}
 \caption[\textit{style.css}-Datei des QlikView C3Kreisdiagramm Extension Objects]{\textit{style.css}-Datei des QlikView C3Kreisdiagramm Extension Objects, \\Quellcode\textbackslash{}JavaScript\textbackslash{}QlikView\textbackslash{}C3Kreisdiagramm\textbackslash{}style.css, \\Quelle: Eigenes Listing}
 \label{lst:JavascriptC3KreisdiagrammCSSStylesheet}
-\end{listing}
+\end{listing}\fi
 
 \subsubsection{Erstellung der Definition.xml-Datei}
 
 In dem Listing \ref{lst:JavascriptC3KreisdiagrammDefinition} ist die \textit{Definition.xml}-Datei für das Extension Object zu sehen.
 
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -437,7 +437,7 @@ In dem Listing \ref{lst:JavascriptC3KreisdiagrammDefinition} ist die \textit{Def
 \end{minted}
 \caption[\textit{Definition.xml}-Datei des QlikView C3Kreisdiagramm Extension Objects]{\textit{Definition.xml}-Datei des QlikView C3Kreisdiagramm Extension Objects, \\Quellcode\textbackslash{}JavaScript\textbackslash{}QlikView\textbackslash{}C3Kreisdiagramm\textbackslash{}Definition.xml, \\Quelle: Eigenes Listing}
 \label{lst:JavascriptC3KreisdiagrammDefinition}
-\end{listing}
+\end{listing}\fi
 % = oder ohne?
 % Initial="" bringt das was?
 
@@ -471,7 +471,7 @@ Das Festlegen eines Bezeichners für die Parameter wäre wünschenswert. Wird n�
 
 Listing \ref{lst:JavascriptC3KreisdiagrammKonfigurationsdialogAusschnitt} auf Seite \pageref{lst:JavascriptC3KreisdiagrammKonfigurationsdialogAusschnitt} ist ein Ausschnitt der \textit{Properties.qvpp}-Datei. Die komplette Datei lässt sich im Listing \ref{lst:QlikViewJavascriptC3KreisdiagrammSkript} in Anhang \ref{lab:QlikViewJavascriptC3KreisdiagrammKonfigurationsdialog} einsehen. Im Anhang \ref{lab:ScreenshotsVonQlikView} ist der Konfigurations\-dialog in seiner Darstellung im Browser in der Abbildung \ref{fig:QlikViewC3KreisdiagrammDialogScreenshot} zu sehen.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -522,7 +522,7 @@ Listing \ref{lst:JavascriptC3KreisdiagrammKonfigurationsdialogAusschnitt} auf Se
 \end{minted}
 \caption[\textit{Properties.qvpp}-Datei des QlikView C3Kreisdiagramm Extension Objects]{\textit{Properties.qvpp}-Datei des QlikView C3Kreisdiagramm Extension Objects, \\Quellcode\textbackslash{}JavaScript\textbackslash{}QlikView\textbackslash{}C3Kreisdiagramm\textbackslash{}Properties.qvpp, \\Quelle: Eigenes Listing}
 \label{lst:JavascriptC3KreisdiagrammKonfigurationsdialogAusschnitt}
-\end{listing}
+\end{listing}\fi
 
 In dieser Datei wird der Konfigurations\-dialog des Kreis\-diagramms beschrieben. Durch einige bereits vordefinierte CSS-Klassen wird das Aussehen des Dialoges umgesetzt. Die CSS-Klassen realisieren das Einpassen der Eingabefelder und Labels in ein Gestaltungsraster. Unterschiedliche Kombinationen von Eingabefeldern mit Labels erfordern unterschiedliche Ausmaße, um im Gestaltungsraster eingebettet werden zu können. Eine einfache Möglich\-keit ist es, sich an den \textit{Properties.qvpp}-Dateien anderer QlikView Extension Objects zu orientieren, da das Erstellen sonst sehr mühselig werden könnte.
 
@@ -545,7 +545,7 @@ Die Checkbox für den Wahrheits\-wert zum Anzeigen der Legende wird in den Zeile
 Im Listing \ref{lst:JavascriptC3KreisdiagrammSkript} auf Seite \pageref{lst:JavascriptC3KreisdiagrammSkript} ist das Skript für das Kreisdiagramm zu sehen.
 
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -607,7 +607,7 @@ Qv.LoadExtensionScripts(jsFiles, function() {
 \end{minted}
 \caption[\textit{Script.js}-Datei des QlikView C3Kreisdiagramm Extension Objects]{\textit{Script.js}-Datei des QlikView C3Kreisdiagramm Extension Objects, \\Quellcode\textbackslash{}JavaScript\textbackslash{}QlikView\textbackslash{}C3Kreisdiagramm\textbackslash{}Script.js, \\Quelle: Eigenes Listing}
 \label{lst:JavascriptC3KreisdiagrammSkript}
-\end{listing}
+\end{listing}\fi
 % = oder ohne? Kein Unterschied
 % Initial="" bringt das was? Nö aber muss da sein :/
 
@@ -649,22 +649,22 @@ Jede Instanz eines Extension Objects ist über eine sogenannte ObjectId eindeuti
 
 Wurde auf dem QlikView Server das Extension Object installiert und in einem Dokument zu einem Arbeitsblatt hinzugefügt, so kann in der JavaScript-Konsole nach dem Objekt gesucht werden. In der Abbildung \ref{fig:AutoCompl} ist zu sehen, dass das Funktionsobjekt durch automatische Vervollständigung sehr einfach gefunden werden kann. Die automatische Vervollständigung ist sehr nützlich, da die eindeutige \textit{ObjectId} nicht zwingend bekannt ist.
 
-\begin{figure}[htbp]
+\ifIncludeFigures\begin{figure}[htbp]
 	\centering
 		\includegraphics[width=0.50\textwidth]{./img/DevTools/AutoCompl.png}
 	\caption[Automatische Vervollständigung der Referenz zum Extension Object]{Automatische Vervollständigung der Referenz zum Extension Object, Quelle: Eigene Abbildung}
 	\label{fig:AutoCompl}
-\end{figure}
+\end{figure}\fi
 
 
 Wenn der Bezeichner des Funktionsobjektes richtig vervollständigt wurde, kann nach Bestätigung der Eingabe das Objekt inspiziert werden. Dies ist in Abbildung \ref{fig:InspectExtensionObject} auf Seite \pageref{fig:InspectExtensionObject} zu sehen.
 
-\begin{figure}[htbp]
+\ifIncludeFigures\begin{figure}[htbp]
 	\centering
 		\includegraphics[width=0.60\textwidth]{./img/DevTools/Inspect.png}
 	\caption[Inspizierung des Extension Objects in den Chrome DevTools]{Inspizierung des Extension Objects in den Chrome DevTools, \\Quelle: Eigene Abbildung}
 	\label{fig:InspectExtensionObject}
-\end{figure}
+\end{figure}\fi
 
 
 \paragraph{Inspizieren der übermittelten Daten}
@@ -672,12 +672,12 @@ Wenn der Bezeichner des Funktionsobjektes richtig vervollständigt wurde, kann n
 
 Ein weiterer Blick in das Funktionsobjekt der Erweiterung mithilfe der Entwicklertools eines Webbrowsers gibt einen Überblick, wie die Daten der Erweiterung strukturiert sind. In der Abbildung \ref{fig:InspectDataRowsAll} sind drei Daten\-sätze zu sehen, die der Erweiterung zur Visualisierung bereitgestellt wurden. Innerhalb des Funktionsobjektes der Erweiterung befinden sich die Daten im Attribut \textit{Data}. Darin ist unter anderem das Attribut \textit{Rows} gespeichert, bei dem es sich um ein Array handelt, in dem jedes Element einen Daten\-satz darstellt. Bei jedem dieser Daten\-sätze handelt es sich wiederum um ein Array, in dem das erste Element die Dimension und das zweite Element den dazugehörigen Wert beschreibt.
 
-\begin{figure}[htbp]
+\ifIncludeFigures\begin{figure}[htbp]
 	\centering
 		\includegraphics[width=1.00\textwidth]{./img/DevTools/DataRowsAll.png}
 	\caption[Inspizierung der Daten des Extension Objects in den Chrome DevTools]{Inspizierung der Daten des Extension Objects in den Chrome DevTools,\\Quelle: Eigene Abbildung}
 	\label{fig:InspectDataRowsAll}
-\end{figure}
+\end{figure}\fi
 
 Das Element der Dimension enthält unter anderem das Attribut \textit{text}, welches den anzu\-zeigenden Namen der Dimension repräsentiert, und das Attribut \textit{value}, welches nicht den Wert, aber die Identifikationsnummer des Daten\-satzes speichert. Die Id ist vor allem für die Selektion der Daten wichtig.
 
@@ -698,12 +698,12 @@ Das Übergeben der Identifikationsnummer als Bezeichner der Spalte ist nötig, d
 
 Alle Parameter, die in der \textit{Definition.xml}-Datei deklariert werden, sind im Funktionsobjekt des Extension Objects im Attribut \textit{Layout} zu finden. In der Abbildung \ref{fig:InspectLayoutParams} wird der Parameter zum Anzeigen der Legende in den Entwicklertools des Chrome Browsers dargestellt.
 
-\begin{figure}[htbp]
+\ifIncludeFigures\begin{figure}[htbp]
 	\centering
 		\includegraphics[width=0.25\textwidth]{./img/DevTools/LayoutParams.png}
 	\caption[Inspizierung der Parameter des Extension Objects in den Chrome DevTools]{Inspizierung der Parameter des Extension Objects in den Chrome DevTools, Quelle: Eigene Abbildung}
 	\label{fig:InspectLayoutParams}
-\end{figure}
+\end{figure}\fi
 
 In der Zeile 29 der \textit{Script.js}-Datei wird der Parameter \textit{Text0} über sein Attribut \textit{text} eingelesen und direkt in einen Wahrheits\-wert konvertiert. Verwendet wird der Wahrheits\-wert in Zeile 47, um das Anzeigen der Legende ein- bzw. auszuschalten.
 
@@ -757,7 +757,7 @@ Zum Testen der Document Extension kann das gleiche Dokument zur Anwendung kommen
 
 \subsubsection{Erstellung der Definition.xml-Datei}
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -773,13 +773,13 @@ Zum Testen der Document Extension kann das gleiche Dokument zur Anwendung kommen
 \end{minted}
 \caption[\textit{Definition.xml}-Datei der DownloadArbeitsblattAlsPng Document Extension]{\textit{Definition.xml}-Datei der DownloadArbeitsblattAlsPng Document Extension, \\Quellcode\textbackslash{}JavaScript\textbackslash{}QlikView\textbackslash{}DownloadArbeitsblattAlsPng\textbackslash{}Definition.xml, \\Quelle: Eigenes Listing}
 \label{lst:ArbeitsblattAlsPngDocumentExtensionDefinition}
-\end{listing}
+\end{listing}\fi
 
 Im Listing \ref{lst:ArbeitsblattAlsPngDocumentExtensionDefinition} ist die Definition der Document Extension zu sehen. Ein Label wird nicht angegeben, denn dieses wird in der Liste der verfügbaren Document Extensions nicht angezeigt. Lediglich die Beschreibung kann dort eingesehen werden und wird daher über das Attribut \textit{Description} gesetzt. Anders als bei Extension Objects ist hier das Attribut \textit{Type} mit dem Wert \textit{document} anzugeben, um es als Document Extension zu deklarieren.
 
 \subsubsection{Erstellung der Script.js-Datei}
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -838,7 +838,7 @@ function downloadSheetAsPng(sheetSize) {
 \end{minted}
 \caption[\textit{Script.js}-Datei der DownloadArbeitsblattAlsPng Document Extension]{\textit{Script.js}-Datei der DownloadArbeitsblattAlsPng Document Extension, \\Quellcode\textbackslash{}JavaScript\textbackslash{}QlikView\textbackslash{}DownloadArbeitsblattAlsPng\textbackslash{}Script.js, \\Quelle: Eigenes Listing}
 \label{lst:ArbeitsblattAlsPngDocumentExtensionSkript}
-\end{listing}
+\end{listing}\fi
 
 
 Das Skript der Document Extension ist im Listing \ref{lst:ArbeitsblattAlsPngDocumentExtensionSkript} auf Seite \pageref{lst:ArbeitsblattAlsPngDocumentExtensionSkript} abgebildet. Einige der Schritte ähneln der Erstellung der \textit{Script.js}-Datei des Extension Objects im Kapitel \ref{lab:ErstellungDerScriptJsDateiQvEoJs}.
@@ -874,7 +874,7 @@ Für das Beispiel der vorliegenden Arbeit wird die Qlik Sense Workbench verwende
 
 An der Datei \textit{C3Kreisdiagramm.qext} sollten einige Änderungen durchgeführt werden. Das Attribut \textit{icon} erhält statt dem Wert \textit{bar-chart-vertical} den Wert \textit{pie-chart,} damit die Erweiterung in der Liste der verfügbaren Erweiterungen mit einem Kreisdiagramm als Vorschaubild erscheint. Alternativ kann für das Attribut \textit{preview} der Name einer Bild\-datei angegeben werden. Für diese Erweiterung wird das Attribut entfernt. Außerdem erhält das Attribut \textit{author} den Namen des Verfassers dieser Arbeit. Das Listing \ref{lst:QlikSenseC3KreisdiagrammC3Kreisdiagrammqext} zeigt die durchgeführten Änderungen an der Datei.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -893,7 +893,7 @@ An der Datei \textit{C3Kreisdiagramm.qext} sollten einige Änderungen durchgefü
 \end{minted}
 \caption[\textit{.qext}-Datei des Qlik Sense C3Kreisdiagramm Extension Objects]{\textit{.qext}-Datei des Qlik Sense C3Kreisdiagramm Extension Objects, \\Quellcode\textbackslash{}JavaScript\textbackslash{}Qlik Sense\textbackslash{}C3Kreisdiagramm\textbackslash{}C3Kreisdiagramm.qext, \\Quelle: Eigenes Listing}
 \label{lst:QlikSenseC3KreisdiagrammC3Kreisdiagrammqext}
-\end{listing}
+\end{listing}\fi
 
 \subsubsection{Weitere Module erstellen}
 \label{lab:QlikSenseWeitereModuleErstellen} 
@@ -907,7 +907,7 @@ Da Qlik Sense die Bibliothek RequireJS verwendet, ist es sehr einfach möglich, 
 
 Wie schon bereits im Kapitel \ref{lab:HinzufügenEinesCSSStylesheet} für das QlikView Extension Object beschrieben, bedarf es einer CSS-Anweisung für die Erweiterung. Sie sorgt dafür, dass die generierte Vektorgrafik korrekt im zu zeichnenden Bereich erstellt wird. Der Inhalt, der im Reiter \textit{style.css} eingetragen wird, ist im Listing \ref{lst:QlikSenseC3KreisdiagrammStyleCss} zu sehen.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -919,13 +919,13 @@ Wie schon bereits im Kapitel \ref{lab:HinzufügenEinesCSSStylesheet} für das Ql
 \end{minted}
 \caption[\textit{style.css}-Datei des Qlik Sense C3Kreisdiagramm Extension Objects]{\textit{style.css}-Datei des Qlik Sense C3Kreisdiagramm Extension Objects, \\Quellcode\textbackslash{}JavaScript\textbackslash{}Qlik Sense\textbackslash{}C3Kreisdiagramm\textbackslash{}style.css, \\Quelle: Eigenes Listing}
 \label{lst:QlikSenseC3KreisdiagrammStyleCss}
-\end{listing}
+\end{listing}\fi
 
 \paragraph{Initiale Eigenschaften}
 
 Im Listing \ref{lst:QlikSenseC3KreisdiagrammInitialPropertiesJs} werden die initialen Eigenschaften des Extension Objects deklariert. Hier können beispielsweise Standardwerte für die Dimensionen - in Zeile 4 - und für die Formeln - in Zeile 5 - festgelegt werden. Durch den Befehl \textit{define} in Zeile 1 wird das assoziative Array unter dem Namen der JavaScript-Datei definiert. Es gibt keine Abhängig\-keiten von anderen Modulen, daher erhält die Funktion nur einen Parameter, nämlich die aufzurufende Funktion des Moduls. Sie gibt das Array zurück.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -948,7 +948,7 @@ define(function() {
 \end{minted}
 \caption[\textit{initialProperties.js}-Datei des Qlik Sense C3Kreisdiagramm Extension Objects]{\textit{initialProperties.js}-Datei des Qlik Sense C3Kreisdiagramm Extension Objects, \\Quellcode\textbackslash{}JavaScript\textbackslash{}Qlik Sense\textbackslash{}C3Kreisdiagramm\textbackslash{}initialProperties.js, \\Quelle: Eigenes Listing}
 \label{lst:QlikSenseC3KreisdiagrammInitialPropertiesJs}
-\end{listing}
+\end{listing}\fi
 
 \paragraph{Definition der Dimensionen, Formeln, Parameter und Eingabefelder}
 
@@ -956,7 +956,7 @@ Eine Datei zum Beschreiben des Konfigurationsdialoges, wie es sie unter dem Name
 
 Listing \ref{lst:QlikSenseC3KreisdiagrammDefinitionJs} zeigt die Definition des Extension Objects. Die Hauptnavigation ist eine Liste von Menüpunkten - deklariert in Zeile 3 - die in einem \textit{accordion} - zugewiesen in Zeile 4 - dargestellt werden. In einigen Einträgen ist die Zuweisung des Attributes \textit{uses} angegeben. Damit wird die Standardkonfiguration geladen. Alle weiteren Eigenschaften konfigurieren diese Standardeinstellungen.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -997,7 +997,7 @@ define(function() {
 \end{minted}
 \caption[\textit{definition.js}-Datei des Qlik Sense C3Kreisdiagramm Extension Objects]{\textit{definition.js}-Datei des Qlik Sense C3Kreisdiagramm Extension Objects, \\Quellcode\textbackslash{}JavaScript\textbackslash{}Qlik Sense\textbackslash{}C3Kreisdiagramm\textbackslash{}definition.js, \\Quelle: Eigenes Listing}
 \label{lst:QlikSenseC3KreisdiagrammDefinitionJs}
-\end{listing}
+\end{listing}\fi
 
 Es sollen genau eine Dimension und eine Formel für das Extension Object existieren. Daher werden das Minimum und das Maximum für die Dimensionen - in Zeile 8 - und für die Formeln - in Zeile 12 - auf \textit{1} gesetzt. Neben der Standardkonfiguration soll eine komplett neue Eigenschaft hinzugefügt werden, nämlich der Wahrheits\-wert zum Anzeigen der Legende. Diese soll in der Rubrik der Einstellungen erscheinen und wird daher dem Eintrag \textit{settings} in den Zeilen 17-27 hinzugefügt. Durch den Eintrag \textit{items} kann eine weitere Unternavigation hinzugefügt werden. In dieser ist nur das Eingabefeld \textit{Legend} präsent. In den Zeilen 21 und 23 wird festgelegt, dass es sich um einen Wahrheits\-wert handelt, der standardmäßig den Wert \textit{wahr} hat und der anzuzeigende Text \textit{Zeige Legende} lauten soll. In Zeile 24 wird ein Bezeichner dem Attribut \textit{ref} zugewiesen, unter welchem die Eingabe des Feldes im Skript zu finden sein wird.
 
@@ -1013,7 +1013,7 @@ Die im Folgenden notwendigen Dateien sind also: \textit{d3.min.js} \footnote{\ur
 
 Die Definition der Module erfolgt durch RequireJS nicht nur über den Dateinamen, sondern auch über den Dateipfad.\footnote{Vgl. \cite{RequireJSAPILoadJavaScriptFiles}} So wird beispielsweise die Datei \textit{C3Kreisdiagramm.js} mit dem Pfad \textit{extensions/C3Kreisdiagramm/C3Kreisdiagramm} erstellt. Die \textit{d3.min.js}-Datei befindet sich in demselben Ordner und wird daher auch relativ zu diesem Pfad definiert, und zwar unter \textit{extensions/C3Kreisdiagramm/d3.min}. Dies ist jedoch problematisch, da die Bibliothek C3 die Abhängig\-keit D3 im Pfad \textit{d3} erwartet. Dies ist im Listing \ref{lst:RequireJsBefehlDefineC3Js} in der Zeile 6902 zu sehen.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1032,12 +1032,12 @@ if (typeof define === 'function' && define.amd) {
 \end{minted}
 \caption[RequireJS-Befehl \textit{define} in der C3.js-Bibliothek]{RequireJS-Befehl \textit{define} in der C3.js-Bibliothek der Version 0.4.9, c3.js, \\Quelle: \cite{c3masayuki0812c3}}
 \label{lst:RequireJsBefehlDefineC3Js}
-\end{listing}
+\end{listing}\fi
 
 Unter dem Pfad \textit{d3} ist die Abhängig\-keit nicht zu finden, was dazu führt, dass C3 nicht initialisiert werden kann und die Referenz auf die Bibliothek im Skript \textit{null} sein wird. Dies wird bei der Generation des Diagramms zu einem Fehler führen. Daher ist es nötig den Ausdruck zu modifizieren, indem der tatsächliche Pfad der Bibliotheken angegeben wird. Im Listing \ref{lst:KorrekturDesDefineBefehlsInC3FuerJavaScript} auf Seite \pageref{lst:KorrekturDesDefineBefehlsInC3FuerJavaScript} ist die modifizierte Zeile 6902 einsehbar.
 % XXXX Abbildung einfügen
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1057,14 +1057,14 @@ if (typeof define === 'function' && define.amd) {
 \end{minted}
 \caption[Korrektur des \textit{define}-Befehls in der C3.js-Bibliothek]{Korrektur des \textit{define}-Befehls in der C3.js-Bibliothek, \\Quellcode\textbackslash{}JavaScript\textbackslash{}Qlik Sense\textbackslash{}C3Kreisdiagramm\textbackslash{}c3.js, \\Quelle: \cite{c3masayuki0812c3} modifiziert durch Verf.}
 \label{lst:KorrekturDesDefineBefehlsInC3FuerJavaScript}
-\end{listing}
+\end{listing}\fi
 
 \newpage
 \paragraph{Anpassen der wbfolder.wbl-Datei}
 
 Damit die soeben hinzugefügten Dateien auch in der Qlik Sense Workbench als Reiter auftauchen, müssen sie in der \textit{wbfolder.wbl}-Datei gelistet werden. Im Listing \ref{lst:QlikSenseC3KreisdiagrammWbfolderWblDatei} ist die \textit{wbfolder.wbl}-Datei nach dem Hinzufügen der betroffenen Dateien zu sehen.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1083,14 +1083,14 @@ c3.js;
 \end{minted}
 \caption[\textit{wbfolder.wbl}-Datei des Qlik Sense C3Kreisdiagramm Extension Objects ]{\textit{wbfolder.wbl}-Datei des Qlik Sense C3Kreisdiagramm Extension Objects, \\Quellcode\textbackslash{}JavaScript\textbackslash{}Qlik Sense\textbackslash{}C3Kreisdiagramm\textbackslash{}wbfolder.wbl, \\Quelle: Eigenes Listing}
 \label{lst:QlikSenseC3KreisdiagrammWbfolderWblDatei}
-\end{listing}
+\end{listing}\fi
 
 \subsubsection{C3Kreisdiagramm.js}
 \label{lab:C3KreisdiagrammJs} 
 
 Im Listing \ref{lst:QlikSenseC3KreisdiagrammC3KreisdiagrammJs} auf Seite \pageref{lst:QlikSenseC3KreisdiagrammC3KreisdiagrammJs} ist der Haupteinstiegspunkt des Extension Objects zu sehen. In den Zeilen 1 und 2 werden die erstellten Module für die Definition und die initialen Eigenschaften sowie die benötigten Bibliotheken als Abhängig\-keiten dieses Moduls definiert. Der zweite Parameter in der Zeile 3 ist eine Funktion, welche die angegebenen Abhängig\-keiten als Parameter erhält. Aus diesem Grund ist die Anzahl der Parameter gleich der Anzahl der Einträge der Liste von Abhängig\-keiten. Weiterhin ist auch die Reihenfolge gleich, sodass der erste Eintrag der Abhängig\-keiten auch dem ersten Parameter der Funktion zugewiesen wird.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1150,7 +1150,7 @@ define(["./initialProperties", "./definition", "./c3",
 \end{minted}
 \caption[\textit{.js}-Datei des Qlik Sense C3Kreisdiagramm Extension Objects ]{\textit{.js}-Datei des Qlik Sense C3Kreisdiagramm Extension Objects, \\Quellcode\textbackslash{}JavaScript\textbackslash{}Qlik Sense\textbackslash{}C3Kreisdiagramm\textbackslash{}C3Kreisdiagramm.js, \\Quelle: Eigenes Listing}
 \label{lst:QlikSenseC3KreisdiagrammC3KreisdiagrammJs}
-\end{listing}
+\end{listing}\fi
 
 
 Bei den beiden letzten Abhängig\-keiten \textit{text!./c3.min.css} und \textit{text!./style.css} handelt es sich um CSS-Dateien, welche nicht als JavaScript-Objekte eingelesen werden können und daher als Text interpretiert werden müssen. Aufgrund dessen beginnen beide Abhängig\-keiten mit dem Ausdruck \textit{text!}, welcher angibt, dass der Inhalt der Datei als Zeichenkette dem Parameter übergeben werden soll.\footnote{Vgl. \cite{SpecifyATextFileDependency}}
@@ -1182,12 +1182,12 @@ Durch Eintippen der Zeichenkette \textit{C3KreisdiagrammData} in der JavaScript-
 Die Daten sind ähnlich aufgebaut wie in QlikView, was im Kapitel \ref{lab:InspizierenDerUebermitteltenDaten} nachgeschlagen werden kann. Jeder Daten\-satz ist ein Array mit zwei Elementen.
 Im ersten Element ist unter anderem die Id, welche zur Selektion des Daten\-satzes notwendig ist, im Attribut \textit{qElemNumber} gespeichert. Weiterhin ist die Bezeichnung der Dimension im Attribut \textit{qText} zu finden. 
 
-\begin{figure}
+\ifIncludeFigures\begin{figure}
 	\centering
 		\includegraphics[width=0.60\textwidth]{img/QsDevTools/qDataPages.PNG}
 	\caption[Daten des Qlik Sense Extension Object C3Kreisdiagramm]{Daten des Qlik Sense Extension Object C3Kreisdiagramm, \\Quelle: Eigene Abbildung}
 	\label{fig:qDataPages}
-\end{figure}
+\end{figure}\fi
 
 Im zweiten Element des Arrays ist der Wert des Daten\-satzes in unterschiedlichen Daten\-formaten vorhanden. Das Attribut \textit{qText} speichert den Wert als Zeichenkette während \textit{qNum} den Wert als Zahl beinhaltet.
 
@@ -1240,7 +1240,7 @@ Ein Dartprojekt enthält im Wurzelordner eine \textit{pubspec.yaml}-Datei. Dabei
 
 
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1258,7 +1258,7 @@ transformers:
 \end{minted}
 \caption[\textit{pubspec.yaml}-Datei der Abstraktionsbibliothek]{\textit{pubspec.yaml}-Datei der Abstraktionsbibliothek, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}qlikview\_qlik\_sense\_extensions\textbackslash{}pubspec.yaml, \\Quelle: Eigenes Listing}
 \label{lst:QlikviewQlikSenseExtensionsPubspecYaml}
-\end{listing}
+\end{listing}\fi
 
 In Zeile 7 wird mit dem Kommandozeilenparameter \textit{--enable-enum} angegeben, dass auch Enum-Typen verwendet werden sollen. 
 \begin{quote}
@@ -1268,7 +1268,7 @@ To use dart2js on code that includes enumerated types, opt in by specifying the 
 
 \subsubsection{Dateiorganisation}
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1291,7 +1291,7 @@ part 'src/qlik_sense_extension_object.dart';
 \end{minted}
 \caption[Organisation der Quelldateien der Abstraktionsbibliothek]{Organisation der Quelldateien der Abstraktionsbibliothek, Quellcode\textbackslash{}Dart""\textbackslash{}Projekte\textbackslash{}qlikview\_qlik\_sense\_extensions\textbackslash{}lib\textbackslash{}qlikview\_qlik\_sense\_extensions.dart, \\Quelle: Eigenes Listing}
 \label{lst:OrganisationDerQuelldateien}
-\end{listing}
+\end{listing}\fi
 
 In Listing \ref{lst:OrganisationDerQuelldateien} auf Seite \pageref{lst:OrganisationDerQuelldateien} ist die Haupteinstiegsdatei \textit{qlikview\_qlik\_sense\_extensions.dart} der Bibliothek zu sehen. In der Datei werden lediglich der Name der Bibliothek – Zeile 3 - und alle dazugehörigen Dateien angegeben. Es wird eine Bibliothek zur Interoperabilität mit JavaScript in Zeile 5 angefordert. 
 
@@ -1304,7 +1304,7 @@ Eine Datei, die mit dem Schlüssel\-wort \textit{part} angegeben ist, wird so be
 \subsubsection{Allgemeine Basisklassen}
 
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1361,7 +1361,7 @@ void registerExtensionObject
 \end{minted}
 \caption[Enum \textit{SelectionMode} und die Basisklassen \textit{Extension} und \textit{ExtensionObject}]{Enum \textit{SelectionMode} und die Basisklassen \textit{Extension} und \textit{ExtensionObject}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}qlikview\_qlik\_sense\_extensions\textbackslash{}lib\textbackslash{}src""\textbackslash{}qlikview\_qlik\_sense\_extensions\_base.dart, \\Quelle: Eigenes Listing}
 \label{lst:QlikViewQlikSenseExtensionsBaseDart}
-\end{listing}
+\end{listing}\fi
 
 Listing \ref{lst:QlikViewQlikSenseExtensionsBaseDart} auf Seite \pageref{lst:QlikViewQlikSenseExtensionsBaseDart} zeigt die Datei \textit{qlikview\_qlik\_sense\_extensions\_base.dart}. In Zeile 9 wird die abstrakte Klasse Extension deklariert. Jede Document Extension sowie jedes Extension Object verfügt über eine \textit{onCreate}-Methode. Die Methode wird für jede Instanz nur einmal während seiner Erstellung aufgerufen. Sollte die Methode in den erbenden konkreten Klassen nicht implementiert werden, wird es dementsprechende Fehler\-meldungen geben. Die Methode selbst erhält kein \textit{abstract} Schlüssel\-wort. Dadurch, dass sie sich in einer abstrakten Klasse befindet und ihr Methodenkörper fehlt, ist sie automatisch abstrakt.
 
@@ -1375,7 +1375,7 @@ Ein Extension Object muss im Gegensatz zu einer Document Extension auch die Meth
 
 In Zeile 22 wird der Klasse \textit{ExtensionObject} ein assoziatives Array als statische Variable mit dem Namen \textit{extensionMap} hinzugefügt. Die dazugehörige Methode \textit{registerExtensionObject} ist in Zeile 36 deklariert. Sie steuert den Mechanismus, ob ein neues Extension Object erzeugt wird oder ob es bereits existiert und nur neu gezeichnet werden muss. Dazu erhält es die \textit{objektId}. Diese existiert in QlikView als auch in Qlik Sense. In Zeile 38 wird ermittelt, ob die \textit{objectId} dem assoziativen Array schon einmal hinzugefügt wurde. Ist dies der Fall, wird das dazugehörige Extension Object neu gezeichnet – Zeile 41. Ist die \textit{objectId} neu, wird ein neues Extension Object in den Zeilen 43-45 erstellt. Zu diesem Zweck muss der Funktion ebenfalls die Fabrikmethode \textit{factoryFunc} übergeben werden, welche ein Objekt der konkreten Klasse zurückgeben muss.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1435,7 +1435,7 @@ abstract class QlikViewExtension {
 \end{minted}
 \caption[Die Basisklasse \textit{QlikViewExtension}]{Die Basisklasse \textit{QlikViewExtension}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}qlikview\_qlik\_sense\_extensions\textbackslash{}lib\textbackslash{}src""\textbackslash{}qlikview\_extension.dart, \\Quelle: Eigenes Listing}
 \label{lst:BasisklasseQlikViewExtension}
-\end{listing}
+\end{listing}\fi
 
 Die abstrakte Klasse \textit{QlikViewExtension} behandelt alle Gemeinsam\-keiten von QlikView Extensions, demnach alles, was QlikView Document Extensions und QlikView Extension Objects gemeinsam haben. Die Klasse ist im Listing \ref{lst:BasisklasseQlikViewExtension} auf Seite \pageref{lst:BasisklasseQlikViewExtension} abgebildet. Zunächst taucht hier zum ersten Mal in der Zeile 3 der Ausdruck \textit{part of} auf. Jede Datei, die in einer Bibliothek mit dem Schlüssel\-wort \textit{part} hinzugefügt wird, muss eine \textit{part of} Anweisung besitzen. Dabei wird nach der Anweisung der Name ihrer zugehörigen Bibliothek angegeben.
 
@@ -1475,7 +1475,7 @@ Es befindet sich noch eine weitere syntaktische Besonder\-heit von Dart in dem L
 Listing \ref{lst:BasisklasseQlikViewExtensionObject} auf Seite \pageref{lst:BasisklasseQlikViewExtensionObject} zeigt die angesprochene Klasse \textit{QlikViewExtensionObject}. Der Anwender der Klassen\-bibliothek wird von dieser Klasse erben, wenn er eine eigene konkrete Klasse für ein QlikView Extension Object erstellen möchte. Sie erbt direkt von der Klasse \textit{ExtensionObject}. Mithilfe des Schlüssel\-wortes \textit{with} wird in Zeile 6 definiert, dass sie auch Funktionalitäten und Schnittstellen der Klasse \textit{QlikViewExtension} erhalten soll.
 
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1535,7 +1535,7 @@ abstract class QlikViewExtensionObject extends ExtensionObject
 \end{minted}
 \caption[Die Basisklasse \textit{QlikViewExtensionObject}]{Die Basisklasse \textit{QlikViewExtensionObject}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}qlikview\_qlik\_sense\_extensions\textbackslash{}lib\textbackslash{}src""\textbackslash{}qlikview\_extension\_object.dart, \\Quelle: Eigenes Listing}
 \label{lst:BasisklasseQlikViewExtensionObject}
-\end{listing}
+\end{listing}\fi
 
 \paragraph{Initialisierungsliste des Konstruktors} 
 
@@ -1570,7 +1570,7 @@ Die Methode \textit{selectValues} erwartet im zweiten Parameter die auszuwählen
 
 Um eine QlikView Erweiterung zu registrieren, soll die Funktion \textit{register""QlikView""Extension""Object} verwendet werden. Sie ist im Listing \ref{lst:registerQlikViewExtensionObject} zu sehen. Auch diese Funktion hat vor allem den Zweck, dem Anwender die komplexen Aufrufe von JavaScript-Methoden zu ersparen. Auf die globale JavaScript-Variable \textit{Qva} kann über die Syntax \textit{context['Qva']} zugegriffen werden. Über das Objekt wird die Methode \textit{AddExtension} aufgerufen. Sie erwartet den Namen der Erweiterung und die Funktion, welche bei jedem Zeichnen aufgerufen werden soll. 
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1590,7 +1590,7 @@ void registerQlikViewExtensionObject(String name
 \end{minted}
 \caption[Die Funktion \textit{registerQlikViewExtensionObject}]{Die Funktion \textit{registerQlikViewExtensionObject}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}qlikview\_qlik\_sense\_extensions\textbackslash{}lib\textbackslash{}src""\textbackslash{}qlikview\_extension\_object.dart, \\Quelle: Eigenes Listing}
 \label{lst:registerQlikViewExtensionObject}
-\end{listing}
+\end{listing}\fi
 
 \newpage
 \paragraph{Benannte Konstruktoren} 
@@ -1607,7 +1607,7 @@ In Zeile 50 wird die Funktion \textit{registerExtensionObject} aus Listing \ref{
 
 In Listing \ref{lst:QlikViewDocumentExtension} auf Seite \pageref{lst:QlikViewDocumentExtension} ist die Klasse \textit{QlikViewDocumentExtension} abgebildet. Der Anwender der Klassen\-bibliothek kann von dieser Klasse erben, um eigene QlikView Document Extensions zu erstellen. Die Klasse erbt diesmal direkt von \textit{Extension}. Außerdem erhält sie die Funktionalitäten und Schnittstellen der Klasse \textit{QlikViewExtension}.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1632,7 +1632,7 @@ abstract class QlikViewDocumentExtension extends Extension
 \end{minted}
 \caption[Die Basisklasse \textit{QlikViewDocumentExtension}]{Die Basisklasse \textit{QlikViewDocumentExtension}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}qlikview\_qlik\_sense\_extensions\textbackslash{}lib\textbackslash{}src""\textbackslash{}qlikview\_document\_extension.dart, \\Quelle: Eigenes Listing}
 \label{lst:QlikViewDocumentExtension}
-\end{listing}
+\end{listing}\fi
 
 Der Name der Erweiterung, der in Zeile 10 deklariert ist, kann im Konstruktor in der Zeile 9 über die kompakte Schreibweise \textit{this.name} initialisiert werden. Anders als in der Klasse \textit{QlikViewExtensionObject} handelt es sich dieses Mal um ein Feld. Trotzdem kann es auf die gleiche Weise zur Vervollständigung des Pfades der Getter-Methode \textit{remoteAddress} verwendet werden. Üblicherweise ist die Parameterliste von Getter-Methoden leer. In Dart wird die Parameterliste nicht angegeben. Damit hat der Aufruf die gleiche Syntax wie der Zugriff auf ein Feld. Gleiches gilt für Setter-Methoden.
 
@@ -1645,7 +1645,7 @@ Die Funktion, welche \textit{AddDocumentExtension} übergeben werden soll, wird 
 Der Name der Erweiterung muss bereits im Konstruktor der Klasse \textit{QlikView""Document""Extension} übergeben werden. Genauso wie die Methode \textit{Add""Extension} zum Registrieren von QlikView Extension Objects erwartet \textit{Add""Document""Extension} den Namen der Erweiterung als ersten Parameter. Er wird in Zeile 23 aus der bereits erstellten Instanz \textit{created""Extension} über das Feld \textit{name} ausgelesen und der Parameterliste übergeben.
 
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1666,7 +1666,7 @@ void registerQlikViewDocumentExtension
 \end{minted}
 \caption[Die Funktion \textit{registerQlikViewDocumentExtension}]{Die Funktion \textit{registerQlikViewDocumentExtension}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}qlikview\_qlik\_sense\_extensions\textbackslash{}lib\textbackslash{}src""\textbackslash{}qlikview\_document\_extension.dart, \\Quelle: Eigenes Listing}
 \label{lst:registerQlikViewDocumentExtension}
-\end{listing}
+\end{listing}\fi
 
 
 \subsubsection{Die Basisklasse QlikSenseExtensionObject}
@@ -1675,7 +1675,7 @@ void registerQlikViewDocumentExtension
 Listing \ref{lst:QlikSenseExtensionObject} auf Seite \pageref{lst:QlikSenseExtensionObject} zeigt die Basisklasse \textit{QlikSenseExtensionObject}. Sie hat viele Gemeinsam\-keiten mit der Basisklasse \textit{QlikViewExtensionObject}, welche im Kapitel \ref{lab:DieBasisklasseQlikViewExtensionObject} beschrieben wird. Sie erbt ebenso von der Klasse \textit{ExtensionObject}. 
 
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1727,7 +1727,7 @@ abstract class QlikSenseExtensionObject extends ExtensionObject {
 \end{minted}
 \caption[Die Basisklasse \textit{QlikSenseExtensionObject}]{Die Basisklasse \textit{QlikSenseExtensionObject}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}qlikview\_qlik\_sense\_extensions\textbackslash{}lib\textbackslash{}src""\textbackslash{}qlik\_sense\_extension\_object.dart, \\Quelle: Eigenes Listing}
 \label{lst:QlikSenseExtensionObject}
-\end{listing}
+\end{listing}\fi
 
 \newpage
 Der in Zeile 7 deklarierte Konstruktor erhält zwei Parameter, nämlich \textit{extensionObject} und \textit{extensionData}. Die \textit{objectId} und der \textit{contentDiv} werden in Zeile 8 übergeben. Dabei gibt es einige Unterschiede im Vergleich zu QlikView Extension Objects. Die \textit{objectId} befindet sich im Attribut \textit{['qInfo']['qId']} des Objektes \textit{extensionData}. Der \textit{contentDiv} wird im \textit{extensionObject} über \textit{[r'\$element'][0]} adressiert. In Dart kennzeichnet ein klein geschriebenes \textit{r} vor dem beginnenden Anführungsstrich die Zeichenkette als sogenannten raw string.\footnote{Vgl. \cite[S. 19]{kopec2014dart}} Das Dollarzeichen, welches in Dart für die string interpolation - siehe \ref{lab:StringInterpolation} - verwendet wird, hat daher in dieser Zeichenkette keine Bedeutung. Da es sich bei \textit{\$element} um ein JQuery-Objekt handelt, muss die tatsächliche Referenz des \textit{div}-Elementes extrahiert werden. Sie befindet sich im ersten Element des Arrays.
@@ -1746,7 +1746,7 @@ In Listing \ref{lst:defineModuleRegisterQlikSenseExtensionObject} sind die zwei 
 
 %  //contentDiv = extensionObject[r'$element'];
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1768,7 +1768,7 @@ void registerQlikSenseExtensionObject(JsObject extensionData
 \end{minted}
 \caption[Die Funktionen \textit{defineModule} und \textit{registerQlikSenseExtensionObject}]{Die Funktionen \textit{defineModule} und \textit{registerQlikSenseExtensionObject}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}qlikview\_qlik\_sense\_extensions\textbackslash{}lib\textbackslash{}src""\textbackslash{}qlik\_sense\_extension\_object.dart, \\Quelle: Eigenes Listing}
 \label{lst:defineModuleRegisterQlikSenseExtensionObject}
-\end{listing}
+\end{listing}\fi
 
 In den Zeilen 51-55 ist die Methode \textit{registerQlikSenseExtensionObject} zu sehen. Sie soll innerhalb der Funktion des Attributes \textit{paint} vom RequireJS-Modul aufgerufen werden. Dabei soll das Objekt \textit{extensionData} sowie die Fabrikmethode \textit{factoryFunc} übergeben werden. Nachdem die \textit{objectId} extrahiert wurde, wird genau wie für die QlikView Extension Objects die Funktion \textit{registerExtensionObject} aufgerufen. Sie verwaltet das Erstellen bzw. das Zeichnen des Extension Objects über die \textit{objectId}.
 
@@ -1783,7 +1783,7 @@ Wie bereits im Kapitel \ref{lab:QlikViewQvExtAnfordernVonWeiterenDateien} beschr
 
 Das zu erstellende package erhält den Namen \textit{qlikview\_modify\_source\_map}. In der \textit{pubspec.yaml}-Datei muss die Abhängig\-keit \textit{barback} hinzugefügt werden, wie im Listing \ref{lst:QlikviewModifySourceMapPubspecYaml} zu sehen ist.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1797,12 +1797,12 @@ dependencies:
 \end{minted}
 \caption[Das \textit{barback} package als Abhängig\-keit für den Pub Transformer]{Das \textit{barback} package als Abhängig\-keit für den Pub Transformer \textit{qlikview\_modify\_source\_map}, Quellcode\textbackslash{}Dart""\textbackslash{}Projekte""\textbackslash{}qlikview\_modify\_source\_map""\textbackslash{}pubspec.yaml, Quelle: Eigenes Listing}
 \label{lst:QlikviewModifySourceMapPubspecYaml}
-\end{listing}
+\end{listing}\fi
 
 
 Das Listing \ref{lst:QlikviewModifySourceMapDart} auf Seite \pageref{lst:QlikviewModifySourceMapDart} zeigt den Transformer \textit{QlikViewModifySourceMap}. Es wird unter anderem das package \textit{barback} in Zeile 5 importiert, welches notwendig ist, um von der Klasse Transformer erben zu können. Darüber hinaus taucht zum ersten Mal das package \textit{path} in Zeile 8 auf. Es vereinfacht die Konstruktion von Dateipfaden.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1856,7 +1856,7 @@ class QlikViewModifySourceMap extends Transformer {
 \end{minted}
 \caption[Der Transformer \textit{qlikview\_modify\_source\_map}]{Der Transformer \textit{qlikview\_modify\_source\_map}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}qlikview\_modify\_source\_map\textbackslash{}lib""\textbackslash{}qlikview\_modify\_source\_map.dart, \\Quelle: Eigenes Listing}
 \label{lst:QlikviewModifySourceMapDart}
-\end{listing}
+\end{listing}\fi
 
 
 
@@ -1879,7 +1879,7 @@ Nach der Kompilierung erscheinen die generierten Dateien im \textit{build}-Verze
 
 Obwohl alle verwendeten packages im \textit{build}-Verzeichnis in den Ordner \textit{packages} kopiert werden, weist die source map unterschiedliche Adressierungen auf. Alle durch pub oder git angeforderten packages sind im Pfad \textit{packages/} angegeben, während die im Kapitel \ref{lab:EntwicklungKlassenbibliothekVerallgemeinerungQlikViewQlikSenseAPI} erstellte Klassen\-bibliothek unter dem Pfad \textit{../packages/} erscheint. Der Transformer hat daher auch die Aufgabe, die Pfade aller packages anzugleichen.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -1932,7 +1932,7 @@ class QlikViewQlikSenseDeployment extends Transformer {
 \end{minted}
 \caption[Der Transformer \textit{qlikview\_qlik\_sense\_deployment}]{Der Transformer \textit{qlikview\_qlik\_sense\_deployment}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}qlikview\_qlik\_sense\_deployment\textbackslash{}lib""\textbackslash{}qlikview\_qlik\_sense\_deployment.dart, \\Quelle: Eigenes Listing}
 \label{lst:QlikviewQlikSenseDeployment}
-\end{listing}
+\end{listing}\fi
 
 
 Das für den Transformer erstellte package erhält den Namen \textit{qlikview\_qlik\_sense\_deployment}. Wie jedem Transformer wird ihm die Abhängig\-keit \textit{barback} in der \textit{pubspec.yaml}-Datei hinzugefügt.
@@ -1979,7 +1979,7 @@ Beide Transformer und die Klassen\-bibliothek werden in den Zeilen 11-16 aufgef�
 
 In den Zeilen 18-26 werden die Transformer aufgelistet und konfiguriert. Der Quellcode wird für die Anwendung der Schlüsselwörter \textit{async} und \textit{await} vorbereitet. Anschließend erfolgt die Kompilierung mit aktivierter Unterstützung für Enum-Typen. Dem Transformer \textit{qlikview\_modify\_source\_map} werden der Name der Erweiterung sowie dessen Typ übergeben. Beide Parameter sind nötig, um die absoluten Adressen der Quelldateien in der source map eintragen zu können. Abschließend erhält der Transformer \textit{qlikview\_qlik\_sense\_deployment} den Pfad des Ordners sowie den Namen der Skript-Datei für die Bereitstellung der Erweiterung.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -2011,7 +2011,7 @@ transformers:
 \end{minted}
 \caption[Abhängigkeiten und Transformer des Projektes \textit{dart\_qv\_c3\_kreisdiagramm}]{Abhängigkeiten und Transformer des Projektes \textit{dart\_qv\_c3\_kreisdiagramm}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}dart\_qv\_c3\_kreisdiagramm\textbackslash{}pubspec.yaml, \\Quelle: Eigenes Listing}
 \label{lst:DartQvC3KreisdiagrammPubspecYaml}
-\end{listing}
+\end{listing}\fi
 
 
 \subsubsection{Die Klasse DartQvC3Kreisdiagramm}
@@ -2021,7 +2021,7 @@ transformers:
 Die konkrete Klasse \textit{QlikViewExtensionObject} ist in Listing \ref{lst:DartQvC3KreisdiagrammDartQvC3KreisdiagrammDart} auf Seite \pageref{lst:DartQvC3KreisdiagrammDartQvC3KreisdiagrammDart} zu sehen. Sie weist im Vergleich zu ihrem JavaScript-Äquivalent aus Kapitel \ref{lab:LeitfadenZurErstellungEinesExtensionObjectsMitJavaScript} einige Verbesserungen auf.
 
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -2074,7 +2074,7 @@ class DartQvC3Kreisdiagramm extends QlikViewExtensionObject {
 \end{minted}
 \caption[Die Klasse \textit{DartQvC3Kreisdiagramm}]{Die Klasse \textit{DartQvC3Kreisdiagramm}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}dart\_qv\_c3\_kreisdiagramm\textbackslash{}web""\textbackslash{}dart\_qv\_c3\_kreisdiagramm.dart, \\Quelle: Eigenes Listing}
 \label{lst:DartQvC3KreisdiagrammDartQvC3KreisdiagrammDart}
-\end{listing}
+\end{listing}\fi
 
 
 In der Zeile 8 wird einmalig das \textit{div}-Element zum Zeichnen der Erweiterung erstellt. Die Getter-Methode \textit{showLegend}, welche in Zeile 10 deklariert ist, erleichtert den Zugriff auf den Parameter zum Anzeigen der Legende.
@@ -2088,7 +2088,7 @@ Die \textit{onPaint}-Methode wird in den Zeilen 25-44 implementiert. Wie bereits
 In Listing \ref {lst:DartQvC3KreisdiagrammMainDart} wird die Erweiterung registriert. Dazu wird eine Fabrikmethode übergeben, in der das qvaWrapper-Objekt als Parameter erwartet und direkt als Argument für den Konstruktor von DartQvC3Kreisdiagramm verwendet wird.
 
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -2104,7 +2104,7 @@ void main() {
 \end{minted}
 \caption[Registrierung der Erweiterung DartQvC3Kreisdiagramm]{Registrierung der Erweiterung DartQvC3Kreisdiagramm, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}dart\_qv\_c3\_kreisdiagramm\textbackslash{}web\textbackslash{}main.dart, \\Quelle: Eigenes Listing}
 \label{lst:DartQvC3KreisdiagrammMainDart}
-\end{listing}
+\end{listing}\fi
 
 \newpage
 \subsection{Leitfaden zur Erstellung einer QlikView Document Extension mit Dart}
@@ -2120,7 +2120,7 @@ Wie bereits im Kapitel \ref{lab:LeitfadenZurErstellungEinesQlikViewExtensionObje
 
 Es gibt viele Gemeinsam\-keiten mit der im Kapitel \ref{lab:LeitfadenZurErstellungEinesQlikViewExtensionObjectsMitDartPubspecYaml} erstellten \textit{pubspec.yaml}-Datei. Die gleichen packages werden eingebunden und lediglich zwei Transformer werden anders konfiguriert. Die nötigen Änderungen sind in Listing \ref{lst:DownloadArbeitsblattAlsPngPubspecYaml} zu sehen. Für den Transformer \textit{qlikview""\_modify\_source\_map} muss der Name der Erweiterung sowie der Typ angegeben werden. Weiterhin unterscheidet sich der Bereitstellungspfad des Transformers \textit{qlikview\_qlik\_sense""\_deployment}. Der Name der Skript-Datei ist dagegen für alle QlikView Erweiterungen gleich.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -2138,11 +2138,11 @@ Es gibt viele Gemeinsam\-keiten mit der im Kapitel \ref{lab:LeitfadenZurErstellu
 \end{minted}
 \caption[Transformer des Projektes \textit{dart\_download\_arbeitsblatt\_als\_png}]{Transformer des Projektes \textit{dart\_download\_arbeitsblatt\_als\_png}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}dart\_download\_arbeitsblatt\_als\_png\textbackslash{}pubspec.yaml, \\Quelle: Eigenes Listing}
 \label{lst:DownloadArbeitsblattAlsPngPubspecYaml}
-\end{listing}
+\end{listing}\fi
 
 \subsubsection{Die Klasse DartDownloadArbeitsblattAlsPng}
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -2196,7 +2196,7 @@ class DartDownloadArbeitsblattAlsPng extends QlikViewDocumentExtension {
 \end{minted}
 \caption[Die Klasse \textit{DartDownloadArbeitsblattAlsPng}]{Die Klasse \textit{DartDownloadArbeitsblattAlsPng}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}dart\_download\_arbeitsblatt\_als\_png\textbackslash{}web""\textbackslash{}dart\_download\_arbeitsblatt\_als\_png.dart, \\Quelle: Eigenes Listing}
 \label{lst:DownloadArbeitsblattAlsPngDartDownloadArbeitsblattAlsPngDart}
-\end{listing}
+\end{listing}\fi
 
 Listing \ref{lst:DownloadArbeitsblattAlsPngDartDownloadArbeitsblattAlsPngDart} auf Seite \pageref{lst:DownloadArbeitsblattAlsPngDartDownloadArbeitsblattAlsPngDart} zeigt die Klasse \textit{DartDownloadArbeitsblattAlsPng}. Im Vergleich zur JavaScript-Variante dieser Erweiterung gibt es nur wenige Verbesserungen. Eine davon ist das erleichterte Laden der Abhängig\-keiten, was in Zeile 12 zu sehen ist. Der absolute Pfad muss nicht vom Entwickler konstruiert werden. Stattdessen reicht die Angabe der zu ladenden Dateien über relative Pfade. Darüber hinaus erleichtert das \textit{await}-Schlüssel\-wort den Umgang mit dem asynchronen Methodenaufruf. Erst nachdem alle Bibliotheken geladen wurden, wird auch die Anweisung in Zeile 14 ausgeführt. Sie registriert \textit{onKeyDown} als die aufzurufende Funktion beim Drücken einer Taste durch den Benutzer. Sollte der Benutzer noch vor dem Laden der Bibliotheken eine Taste drücken, wird die Funktion nicht aufgerufen.
 \newpage
@@ -2206,7 +2206,7 @@ Der Vorteil der optionalen Typisierung in Dart wird an der Getter-Methode \texti
 
 \subsubsection{Registrierung der Erweiterung}
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -2222,7 +2222,7 @@ void main() {
 \end{minted}
 \caption[Registrierung der Erweiterung DartDownloadArbeitsblattAlsPng]{Registrierung der Erweiterung DartDownloadArbeitsblattAlsPng, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}dart\_download\_arbeitsblatt\_als\_png\textbackslash{}web\textbackslash{}main.dart, \\Quelle: Eigenes Listing}
 \label{lst:RegistrierungDerErweiterungDartDownloadArbeitsblattAlsPng}
-\end{listing}
+\end{listing}\fi
 
 Listing \ref{lst:RegistrierungDerErweiterungDartDownloadArbeitsblattAlsPng} zeigt die Registrierung der Document Extension. Die Funktion \textit{register\-QlikView\-Document\-Extension} hat im Gegensatz zu der im Listing \ref{lst:DartQvC3KreisdiagrammMainDart} auf Seite \pageref{lst:DartQvC3KreisdiagrammMainDart} zu sehenden Funktion \textit{register\-QlikView\-Extension\-Object} nur einen Parameter. Der Name der Erweiterung wird nicht im ersten Argument, sondern im Konstruktor der Fabrikmethode übergeben. Anders als für QlikView Object Extensions wird kein \textit{qvaWrapper}-Objekt für die Fabrikmethode benötigt, denn es existiert für Document Extensions nicht.
 
@@ -2237,7 +2237,7 @@ Der gesamte Ordner \textit{C3Kreisdiagramm}, der über die Qlik Sense Workbench 
 
 Auch die Dateien \textit{C3\-Kreis\-diagramm.qext} und \textit{C3\-Kreisdiagramm.js} müssen in \textit{Dart\-Qs\-C3\-Kreis\-diagramm.qext} und \textit{Dart\-Qs\-C3\-Kreis\-diagramm.js} umbenannt werden. Damit die Dateien als Reiter in der Qlik Sense Workbench auftauchen, ist das Ändern der Dateinamen in der \textit{wbfolder.wbl}-Datei erforderlich. In der Datei \textit{Dart\-Qs\-C3\-Kreis\-diagramm.qext} muss der Name der Erweiterung ebenfalls in \textit{Dart\-Qs\-C3\-Kreis\-diagramm} geändert werden.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -2257,7 +2257,7 @@ if (typeof define === 'function' && define.amd) {
 \end{minted}
 \caption[Erneute Korrektur des \textit{define}-Befehls in der C3.js-Bibliothek]{Erneute Korrektur des \textit{define}-Befehls in der C3.js-Bibliothek, \\Quellcode\textbackslash{}Dart\textbackslash{}Extensions\textbackslash{}Qlik Sense\textbackslash{}DartQsC3Kreisdiagramm\textbackslash{}c3.js, \\Quelle: \cite{c3masayuki0812c3} modifiziert durch Verf.}
 \label{lst:KorrekturDesDefineBefehlsInC3FuerDart}
-\end{listing}
+\end{listing}\fi
 
 Schließlich ist, wie im Kapitel \ref{lab:HerunterladenDerBibliothekenQlikSense} beschrieben, die Anpassung der Modulpfade in der Datei \textit{c3.js} nötig. Wie im Listing \ref{lst:KorrekturDesDefineBefehlsInC3FuerDart} in Zeile 6902 und 6903 zu sehen, werden die Pfade in \textit{extensions\-/Dart\-Qs\-C3\-Kreis\-diagramm\-/c3} und \textit{extensions\-/Dart\-Qs\-C3\-Kreis\-diagramm\-/d3.min} umgeändert. Das zu erstellende Dart-Projekt erhält den Namen \textit{dart\_qs\_c3\_kreis\-diagramm}.
 
@@ -2265,7 +2265,7 @@ Schließlich ist, wie im Kapitel \ref{lab:HerunterladenDerBibliothekenQlikSense}
 
 Listing \ref{lst:DartQsC3KreisdiagrammPubspecYaml} zeigt einen Auszug der \textit{pubspec.yaml}-Datei des Dart-Projektes. Die Klassen\-bibliothek \textit{qlikview\_qlik\_sense\_extensions} ist auch für die Anwendung mit Qlik Sense Erweiterungen entwickelt worden. Das package wird in Zeile 11 als Abhängig\-keit hinzugefügt. 
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -2289,7 +2289,7 @@ transformers:
 \end{minted}
 \caption[Abhängigkeiten und Transformer des Projektes \textit{dart\_qs\_c3\_kreisdiagramm}]{Abhängigkeiten und Transformer des Projektes \textit{dart\_qs\_c3\_kreisdiagramm}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}dart\_qs\_c3\_kreisdiagramm\textbackslash{}pubspec.yaml, \\Quelle: Eigenes Listing}
 \label{lst:DartQsC3KreisdiagrammPubspecYaml}
-\end{listing}
+\end{listing}\fi
 
 Im Gegensatz zu den QlikView Erweiterungen ist nur noch ein Transformer nötig. Es handelt sich um den Transformer \textit{qlikview\_qlik\_sense\_deployment}, welcher in der Zeile 9 als Abhängig\-keit aufgelistet und in den Zeilen 16-18 konfiguriert wird. In Zeile 17 wird der Ordner für die Bereitstellung angegeben. Der Name der JavaScript-Datei mit dem Haupteinstiegspunkt ist in Zeile 18 zu sehen. Anders als bei QlikView Erweiterungen ist der Name der Datei nicht immer gleich. Er entspricht dem Namen der Erweiterung. 
 
@@ -2299,7 +2299,7 @@ Listing \ref{lst:DartQsC3KreisdiagrammDartQsC3KreisdiagrammDart} auf Seite \page
 
 
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -2351,7 +2351,7 @@ class DartQsC3Kreisdiagramm extends QlikSenseExtensionObject {
 \end{minted}
 \caption[Die Klasse \textit{DartQsC3Kreisdiagramm}]{Die Klasse \textit{DartQsC3Kreisdiagramm}, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}dart\_qs\_c3\_kreisdiagramm\textbackslash{}web""\textbackslash{}dart\_qs\_c3\_kreisdiagramm.dart, \\Quelle: Eigenes Listing}
 \label{lst:DartQsC3KreisdiagrammDartQsC3KreisdiagrammDart}
-\end{listing}
+\end{listing}\fi
 
 Weiterhin erfolgt die Deklaration und Initialisierung des \textit{chartDivElement} in der Zeile 13. Es wird als Container für das zu zeichnende Diagramm verwendet. Noch während der Initialisierung wird mithilfe des cascade operator die CSS-Klasse \textit{kreisdiagramm} hinzugefügt. 
 
@@ -2368,7 +2368,7 @@ In der \textit{onPaint}-Methode, welche in den Zeilen 27-43 des Listings \ref{ls
 
 Listing \ref{lst:RegistrierungDerErweiterungDartQsC3Kreisdiagramm} zeigt die Definition des Moduls sowie die Registrierung der Erweiterung. In den Zeilen 12 und 13 werden die anzufordernden Module als Zeichenketten in einer Liste übergeben. Die geparsten JavaScript-Objekte sowie die eingelesenen Texte werden jeweils den Parametern in den Zeilen 14 und 15 als Objekte vom Typ \textit{JsObject} bzw. \textit{String} übergeben.
 
-\begin{listing}[htbp]
+\ifIncludeFigures\begin{listing}[htbp]
 \begin{minted}[mathescape,
                linenos,
                numbersep=5pt,
@@ -2397,7 +2397,7 @@ void main() {
 \end{minted}
 \caption[Registrierung der Erweiterung DartQsC3Kreisdiagramm]{Registrierung der Erweiterung DartQsC3Kreisdiagramm, \\Quellcode\textbackslash{}Dart\textbackslash{}Projekte\textbackslash{}dart\_qs\_c3\_kreisdiagramm\textbackslash{}web\textbackslash{}main.dart, \\Quelle: Eigenes Listing}
 \label{lst:RegistrierungDerErweiterungDartQsC3Kreisdiagramm}
-\end{listing}
+\end{listing}\fi
 
 In den Zeilen 16-25 erfolgt die Rückgabe des definierten Moduls. Dazu werden den Attributen \textit{initialProperties} - in Zeile 17 – und \textit{definition} - in Zeile 18 – die deserialisierten JavaScript-Objekte der JSON-Dateien aus dem Kapitel \ref{lab:QlikSenseWeitereModuleErstellen} übergeben.
 

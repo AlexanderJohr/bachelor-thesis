@@ -11,7 +11,7 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage[labelfont=bf]{caption} % Fette Abbildungslabels
-\captionsetup{justification=raggedright} % Linksbündig
+\captionsetup{justification=raggedright} % Linksbï¿½ndig
 
 %Schneller durch weniger kompression. Fuer Abgabe ausmachen XXXXXXXXXX
 %\pdfcompresslevel0
@@ -23,7 +23,7 @@
 \usepackage[german]{babel}
 % Biber!!!!!!!!!!!!!!!!!!
 
-% Zeilenumbrüche
+% Zeilenumbrï¿½che
 \RequirePackage[ngerman=ngerman-x-latest]{hyphsubst}
 
 
@@ -51,7 +51,7 @@
 
 \usepackage{tabularx} % in the preamble
 
-% Fußnoten auch in Überschriften
+% Fuï¿½noten auch in ï¿½berschriften
 %\usepackage[stable]{footmisc}
 
 % Bilder
@@ -244,21 +244,21 @@ headsep=12mm, footskip=12mm}
 %
 %\newenvironment{javalistingfigure}
 %{
-%\begin{figure}
+%\ifIncludeFigures\begin{figure}
 %\begin{javalisting}
 %}
 %{
 %\end{javalisting}
 	%\caption{asasas}
 	%\label{fig:javalisting}
-%\end{figure}
+%\end{figure}\fi
 %}
 
 
 %\lstnewenvironment{javalisting}
 %{
 %\begin{center}
-	%\begin{figure}
+	%\ifIncludeFigures\begin{figure}
 
 %		\begin{lstlisting}[style=Java]
 		
@@ -271,7 +271,7 @@ headsep=12mm, footskip=12mm}
 		%\caption{dsdsds}
 		%\label{fig:sddsdsds}
 		
-	%\end{figure}
+	%\end{figure}\fi
 %\end{center}
 %}
 
@@ -297,7 +297,7 @@ headsep=12mm, footskip=12mm}
 
 
 
-% Fußnote nicht hochgestellt, Beispiel macht beides groß
+% Fuï¿½note nicht hochgestellt, Beispiel macht beides groï¿½
 
 %\makeatletter%
 %\long\def\@makefnmark{%
